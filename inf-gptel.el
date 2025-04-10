@@ -40,8 +40,7 @@
     (gptel-request input
       :callback
       (lambda (response _info)
-        (with-current-buffer (current-buffer)
-          (goto-char (process-mark proc))
+        (when (stringp response)
           (comint-output-filter
            proc
            (concat response "\n\n" inf-gptel-prompt)))))))
