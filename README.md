@@ -10,7 +10,8 @@ Install `inf-gptel.el` manually or via vc-use-package (emacs 30):
 
 ```emacs-lisp
 (use-package inf-gptel
-  :vc (:url "https://github.com/tttuuu888/inf-gptel" :branch "main"))
+  :vc
+  (:url "https://github.com/tttuuu888/inf-gptel" :branch "main" :rev :newest))
 ```
 
 ## Usage
